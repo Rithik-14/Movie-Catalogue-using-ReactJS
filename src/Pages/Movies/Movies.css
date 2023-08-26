@@ -1,0 +1,15 @@
+.mov{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.genreTitle{
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.genre_hr{
+    border:1px solid rgba(99,99,99,0.7);
+}

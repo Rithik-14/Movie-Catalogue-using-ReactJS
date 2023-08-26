@@ -1,0 +1,99 @@
+.ContentModal_landscape{
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.ContentModal_portrait{
+    display:none;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.tagline{
+    padding-bottom: 10px;
+    align-self: center;
+}
+
+.ContentModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.ContentModal::-webkit-scrollbar {
+    display : block;
+}
+
+.ContentModal_about {
+    padding: 10px;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    justify-content: space-evenly;
+    font-weight: 300;
+  }
+  
+  .ContentModal_title {
+    height: 12%;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .ContentModal_description {
+    display: flex;
+    height: 40%;
+    overflow-y: scroll;
+    padding: 15px;
+    border-radius: 7px;
+    scrollbar-width: thin; /* Firefox */
+    border:1px solid rgba(99,99,99,0.7);
+    text-align: justify;
+    box-shadow: inset 5px 5px 50px rgba(99,99,99,0.3);
+  }
+
+  .carouselBoundary{
+    border:1px solid rgba(99,99,99,0.7);
+    box-shadow: inset 5px 5px 50px rgba(99,99,99,0.3);
+    margin-top:10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+  }
+
+  .ContentModal_description::-webkit-scrollbar {
+    display:none;
+  }
+
+  @media (min-width: 835px) {
+    .ContentModal_landscape {
+      display: none;
+    }
+    .ContentModal_portrait {
+      display: flex;
+      width: 38%;
+    }
+    .ContentModal {
+      flex-direction: row;
+      justify-content:space-around;
+      padding: 10px 0;
+    }
+    .ContentModal_about {
+      width: 58%;
+      padding: 10px;
+      height: 100%;
+    }
+    .ContentModal_title {
+      font-size: 2.5vw;
+    }
+    .ContentModal_description {
+      font-size: 20px;
+    }
+  }

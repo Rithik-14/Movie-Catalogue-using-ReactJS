@@ -1,0 +1,17 @@
+.castBlock{
+    display:flex;
+    flex-direction: column;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.castImage{
+    border-radius: 5px;
+    height:80px;
+}
+
+.castName{
+    text-align: center;
+    margin-top: 7px;
+    font-size: small;;
+}
